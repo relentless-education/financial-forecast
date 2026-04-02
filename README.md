@@ -54,8 +54,25 @@ tbody tr:last-child td{border-bottom:none}
 tbody tr:hover td{background:rgba(255,255,255,0.015)}
 tfoot td{padding:10px 14px;border-top:1px solid #2a2a2e;background:#141416;text-align:right;font-size:12px;font-weight:700;color:#f0ede8;white-space:nowrap}
 tfoot td:first-child{text-align:left}
-.ei{background:transparent;border:none;outline:none;color:#fff;font-family:inherit;font-size:12px;font-weight:600;width:100%;min-width:60px;text-align:right;padding:0}
-.ei:focus{background:rgba(245,229,0,0.07);border-radius:4px;padding:2px 5px;margin:-2px -5px}
+.ei {
+  background: #252528; /* Dark grey background for the box */
+  border: 1px solid #3a3a3e; /* Visible border */
+  outline: none;
+  color: #F5E500; /* Yellow text makes it pop against the dark row */
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+  min-width: 60px;
+  text-align: right;
+  padding: 4px;
+  border-radius: 4px;
+}
+.ei:focus {
+  background: #333336;
+  border-color: #F5E500;
+  color: #fff; /* Turns white only when you are actively typing */
+}
 .ei[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
 .row-header td{background:#1a1a1c!important;color:#F5E500!important;font-size:11px!important;font-weight:700!important;letter-spacing:0.06em;text-transform:uppercase;padding:12px 14px!important}
 .row-subtotal td{background:#161618!important;color:#c0bdb8!important;font-weight:700!important;border-top:1px solid #2a2a2e!important}
